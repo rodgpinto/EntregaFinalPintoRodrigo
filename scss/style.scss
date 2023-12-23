@@ -1,0 +1,570 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Pixelify Sans", sans-serif;
+  cursor: url('../media/pointer/marioHand.cur'), auto;
+}
+
+//importamos el mixin
+@import "partials/flex";
+@import "partials/padding";
+@import "partials/shadowBlack";
+$color-letra: aliceblue;
+
+
+
+body {
+  background-color: #212529;
+  background-image: url("../media/oldbg.webp");
+  background-repeat: repeat;
+  background-size: auto;
+
+  header {
+    nav {
+      div {
+        a {
+          cursor: url('../media/pointer/marioHandLink.cur'), pointer;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  //Damos estilos al index
+  main {
+    .titulo {
+      div {
+        h1 {
+          margin-top: 20px;
+          text-align: center;
+          color: $color-letra;
+
+        }
+
+        p {
+          font-size: 15px;
+          text-align: center;
+          color: $color-letra;
+          margin-left: 10px;
+          margin-right: 10px;
+
+        }
+
+        .imgLogo {
+          display: flex;
+          justify-content: center;
+
+          //aplicamos un hover a la imagen del logo
+          img {
+            text-align: center;
+            transition: transform 0.8s ease-in-out;
+
+            &:hover {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+
+
+      .subtitulo {
+        div {
+          h2 {
+            margin-top: 15px;
+
+          }
+
+          p {
+            @include padding;
+          }
+        }
+
+      }
+
+    }
+
+    //mejoramos el contenido del carousel
+    div {
+      border: 1px black;
+      border-radius: 20px;
+
+      .slide {
+        height: auto;
+
+        .carousel-control-next {
+          cursor: url('../media/pointer/marioHandSelect.cur'), pointer;
+
+        }
+
+        .carousel-control-prev {
+          cursor: url('../media/pointer/marioHandSelect.cur'), pointer;
+
+        }
+      }
+
+      .carousel-item {
+        width: 100%;
+        height: auto;
+
+        h5 {
+          color: $color-letra;
+          font-size: 45px;
+          font-weight: 800;
+          @include shadowBlack;
+        }
+
+        p {
+          color: $color-letra;
+          font-size: 25px;
+          font-weight: 800;
+          @include shadowBlack;
+
+        }
+      }
+    }
+
+    //implementamos un input de contacto
+    div {
+      h2 {
+        font-size: 15px;
+        margin: 10px;
+        color: $color-letra;
+        text-align: center;
+      }
+
+      p {
+        font-size: 10px;
+        color: $color-letra;
+        text-align: center;
+      }
+    }
+
+    .formIndex {
+      display: flex;
+      justify-content: center;
+
+      div {
+        text-align: center;
+        color: grey;
+
+        .enviarPointer {
+          cursor: url('../media/pointer/marioHandSelect.cur'), pointer;
+
+        }
+      }
+    }
+  }
+
+  //comenzamos a dar estilos a nosotros
+  .nosotros {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    color: $color-letra;
+
+    div {
+      .tituloNosotros {
+        text-align: center;
+      }
+
+      .imgLogo {
+        display: flex;
+        justify-content: center;
+
+        img {
+          text-align: justify;
+          transition: transform 0.8s ease-in-out;
+
+          &:hover {
+            transform: rotate(360deg);
+          }
+        }
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        @include padding;
+        font-size: 15px;
+      }
+
+      div {
+        video {
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+          max-height: 640px;
+        }
+      }
+
+      .mapa {
+        text-align: center;
+      }
+    }
+  }
+
+  //comenzamos a dar estilos al menu
+  .menu {
+    margin-top: 20px;
+    //implementamos un mixins
+    @include flex;
+    color: $color-letra;
+
+    div {
+      .tituloMenu {
+        text-align: center;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .imgLogo {
+        display: flex;
+        justify-content: center;
+
+        img {
+          text-align: justify;
+          transition: transform 0.8s ease-in-out;
+
+          &:hover {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+
+    div {
+      section {
+        text-align: center;
+
+        h2 {
+          font-size: 20px;
+        }
+
+        p {
+          @include shadowBlack;
+          @include padding;
+          font-size: 15px;
+        }
+      }
+    }
+
+    //optimizamos las cards de bootstrap y le aplicamos un hover
+    .card {
+      max-width: 100%;
+      height: auto;
+      border: 1px;
+      border-radius: 15px;
+      background-color: #212529;
+      margin-left: 1%;
+      margin-right: 1%;
+      gap: 0;
+
+
+      .card-img-top {
+
+        border-radius: 15px;
+      }
+
+      div {
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.06);
+        }
+
+        .atari {
+          font-weight: bold;
+          color: red;
+          text-shadow:
+            -1px -1px 0 aliceblue,
+            1px -1px 0 aliceblue,
+            -1px 1px 0 aliceblue,
+            1px 1px 0 aliceblue;
+        }
+
+        .contra {
+          color: rgb(212, 212, 212);
+          text-shadow:
+            -0.5px -0.5px 0 red,
+            0.5px -0.5px 0 red,
+            -0.5px 0.5px 0 red,
+            0.5px 0.5px 0 red;
+        }
+
+        .donkeyKong {
+          color: red;
+          text-shadow:
+            -1px -1px 0 yellow,
+            1px -1px 0 yellow,
+            -1px 1px 0 yellow,
+            1px 1px 0 yellow;
+        }
+
+        .gameOver {
+          color: red;
+          text-shadow:
+            -0.5px -0.5px 0 greenyellow,
+
+        }
+
+        .megaMan {
+          color: rgb(136, 136, 240);
+          text-shadow:
+            -0.5px -0.5px 0 aliceblue,
+
+        }
+
+        .nes {
+          color: red;
+          text-shadow:
+            -1px -1px 0 yellow,
+            1px -1px 0 yellow,
+            -1px 1px 0 yellow,
+            1px 1px 0 yellow;
+        }
+
+        .pacMan {
+          color: yellow;
+          text-shadow:
+            -1px 1px 0 red,
+            1px 1px 0 red;
+        }
+
+        .sunSet {
+          color: red;
+          text-shadow:
+            -0.2px -0.2px 0 yellow,
+            0.2px -0.2px 0 yellow,
+            -0.2px 0.2px 0 yellow,
+            0.2px 0.2px 0 yellow;
+        }
+
+        .superMarioAzul {
+          color: rgba(12, 154, 216, 255);
+          text-shadow:
+            -0.2px -0.2px 0 black,
+            0.2px -0.2px 0 black,
+            -0.2px 0.2px 0 black,
+            0.2px 0.2px 0 black;
+        }
+
+        .superMarioAmarillo {
+          color: rgba(253, 207, 8, 255);
+          text-shadow:
+            -2px -2px 0 black,
+            2px -2px 0 black,
+            -2px 2px 0 black,
+            2px 2px 0 black;
+        }
+
+        .superMarioRojo {
+          color: rgba(229, 41, 39, 255);
+          text-shadow:
+            -2px -2px 0 black,
+            2px -2px 0 black,
+            -2px 2px 0 black,
+            2px 2px 0 black;
+        }
+
+        .superMarioVerde {
+          color: rgba(70, 175, 74, 255);
+          text-shadow:
+            -2px -2px 0 black,
+            2px -2px 0 black,
+            -2px 2px 0 black,
+            2px 2px 0 black;
+        }
+
+        h5 {
+          font-size: 35px;
+          text-align: center;
+          color: $color-letra;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .fotos {
+    .texto-fotos {
+      color: $color-letra;
+      text-align: center;
+    }
+
+    section {
+      .grid {
+        text-align: center;
+        margin: 5px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+          "area1 area1 area2 area2"
+          "area1 area1 area2 area2"
+          "area3 area3 area4 area4"
+          "area3 area3 area4 area4";
+      }
+
+      //aplicamos media query para el grid
+      @media (max-width: 768px) {
+        .grid {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(8, auto);
+          grid-template-areas:
+            "area1"
+            "area1"
+            "area2"
+            "area2"
+            "area3"
+            "area3"
+            "area4"
+            "area4";
+        }
+
+        .gridImg {
+          border-radius: 60px;
+        }
+      }
+
+      //mejoramos las imagenes e implementamos un hover
+      .gridImg {
+        margin: 15px;
+        width: 100%;
+        height: auto;
+        border: 10px;
+        border-radius: 10px;
+        transition: box-shadow 0.3s ease-in-out;
+        transition: transform 0.4s ease-in-out;
+
+        &:hover {
+          transform: scale(1.03);
+          transition: transform 0.4s ease-in-out;
+        }
+      }
+
+      .area {
+        margin: 10px;
+      }
+
+      #area1 {
+        grid-area: area1;
+      }
+
+      #area2 {
+        grid-area: area2;
+      }
+
+      #area3 {
+        grid-area: area3;
+      }
+
+      #area4 {
+        grid-area: area4;
+      }
+
+      #area5 {
+        grid-area: area4;
+      }
+
+      #area6 {
+        grid-area: area4;
+      }
+    }
+  }
+
+  //damos estilo al contacto e incluimos un mixin
+  .contacto {
+    @include flex;
+    color: $color-letra;
+
+    div {
+      .tituloMenu {
+        text-align: center;
+      }
+
+      .imgLogo {
+        display: flex;
+        justify-content: center;
+
+        img {
+          text-align: justify;
+          transition: transform 0.8s ease-in-out;
+
+          &:hover {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+
+    .tituloContacto {
+      text-align: center;
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    div {
+      section {
+        .news {
+          font-size: 18px;
+          margin-left: 0;
+          padding-bottom: 25px;
+          text-align: left;
+        }
+      }
+    }
+
+    .contactoButton {
+      border-radius: 10px;
+      cursor: url('../media/pointer/marioHandSelect.cur'), pointer;
+    }
+  }
+
+  hr {
+    color: white;
+  }
+
+  //damos estilos al footer e incluimos un hover
+  footer {
+    nav {
+      div {
+        @include flex;
+
+        a {
+          margin-top: 20px;
+          margin-left: 10px;
+          margin-right: 10px;
+          color: $color-letra;
+          text-decoration: none;
+          text-align: justify;
+
+        }
+      }
+    }
+
+    div {
+      a {
+        transition: transform 0.3s ease-in-out;
+        cursor: url('../media/pointer/marioHandLink.cur'), pointer;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      @include flex;
+      margin-top: 3px;
+      margin-bottom: 15px;
+      color: $color-letra;
+    }
+  }
+}
