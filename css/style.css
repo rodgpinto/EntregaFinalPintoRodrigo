@@ -99,6 +99,8 @@ body main .formIndex div .enviarPointer {
 body .nosotros {
   margin-top: 20px;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   flex-wrap: wrap;
   color: aliceblue;
 }
@@ -108,9 +110,9 @@ body .nosotros div .tituloNosotros {
 body .nosotros div .imgLogo {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 body .nosotros div .imgLogo img {
-  text-align: justify;
   transition: transform 0.8s ease-in-out;
 }
 body .nosotros div .imgLogo img:hover {
@@ -120,6 +122,7 @@ body .nosotros div h2 {
   font-size: 20px;
 }
 body .nosotros div p {
+  text-align: center;
   padding-left: 10%;
   padding-right: 10%;
   font-size: 15px;
@@ -131,7 +134,14 @@ body .nosotros div div video {
   max-height: 640px;
 }
 body .nosotros div .mapa {
+  align-items: center;
   text-align: center;
+}
+@media (max-width: 768px) {
+  body .nosotros div .mapa .mapaIframe {
+    max-width: 300px;
+    max-height: 450px;
+  }
 }
 body .menu {
   margin-top: 20px;
@@ -248,6 +258,7 @@ body .menu .card div p {
 body .fotos .texto-fotos {
   color: aliceblue;
   text-align: center;
+  padding-top: 15px;
 }
 body .fotos section .grid {
   text-align: center;
