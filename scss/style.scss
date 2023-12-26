@@ -123,6 +123,23 @@ body {
       }
     }
 
+    //ajustamos el video
+    .indexVideo {
+      width: 90%;
+      max-width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      video {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
     //implementamos un input de contacto
     div {
       h2 {
@@ -284,6 +301,51 @@ body {
           transform: scale(1.06);
         }
 
+        .superMarioAzul {
+          color: rgba(12, 154, 216, 255);
+          text-shadow:
+            -0.2px -0.2px 0 black,
+            0.2px -0.2px 0 black,
+            -0.2px 0.2px 0 black,
+            0.2px 0.2px 0 black;
+        }
+
+        .superMarioAmarillo {
+          color: rgba(253, 207, 8, 255);
+          text-shadow:
+            -2px -2px 0 black,
+            2px -2px 0 black,
+            -2px 2px 0 black,
+            2px 2px 0 black;
+        }
+
+        .superMarioRojo {
+          color: rgba(229, 41, 39, 255);
+          text-shadow:
+            -2px -2px 0 black,
+            2px -2px 0 black,
+            -2px 2px 0 black,
+            2px 2px 0 black;
+        }
+
+        .superMarioVerde {
+          color: rgba(70, 175, 74, 255);
+          text-shadow:
+            -2px -2px 0 black,
+            2px -2px 0 black,
+            -2px 2px 0 black,
+            2px 2px 0 black;
+        }
+
+        .luigi {
+          color: rgba(1, 182, 69, 255);
+          text-shadow:
+            -1px -2px 0 black,
+            1px -2px 0 black,
+            -2px 2px 0 black,
+            2px 2px 0 black;
+        }
+
         .atari {
           font-weight: bold;
           color: red;
@@ -351,41 +413,7 @@ body {
             0.2px 0.2px 0 yellow;
         }
 
-        .superMarioAzul {
-          color: rgba(12, 154, 216, 255);
-          text-shadow:
-            -0.2px -0.2px 0 black,
-            0.2px -0.2px 0 black,
-            -0.2px 0.2px 0 black,
-            0.2px 0.2px 0 black;
-        }
 
-        .superMarioAmarillo {
-          color: rgba(253, 207, 8, 255);
-          text-shadow:
-            -2px -2px 0 black,
-            2px -2px 0 black,
-            -2px 2px 0 black,
-            2px 2px 0 black;
-        }
-
-        .superMarioRojo {
-          color: rgba(229, 41, 39, 255);
-          text-shadow:
-            -2px -2px 0 black,
-            2px -2px 0 black,
-            -2px 2px 0 black,
-            2px 2px 0 black;
-        }
-
-        .superMarioVerde {
-          color: rgba(70, 175, 74, 255);
-          text-shadow:
-            -2px -2px 0 black,
-            2px -2px 0 black,
-            -2px 2px 0 black,
-            2px 2px 0 black;
-        }
 
         h5 {
           font-size: 35px;

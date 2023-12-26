@@ -74,6 +74,20 @@ body main div .carousel-item p {
   font-weight: 800;
   text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 2px 2px 0 #000000;
 }
+body main .indexVideo {
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .indexVideo video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 body main div h2 {
   font-size: 15px;
   margin: 10px;
@@ -198,6 +212,26 @@ body .menu .card div {
 body .menu .card div:hover {
   transform: scale(1.06);
 }
+body .menu .card div .superMarioAzul {
+  color: rgb(12, 154, 216);
+  text-shadow: -0.2px -0.2px 0 black, 0.2px -0.2px 0 black, -0.2px 0.2px 0 black, 0.2px 0.2px 0 black;
+}
+body .menu .card div .superMarioAmarillo {
+  color: rgb(253, 207, 8);
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+}
+body .menu .card div .superMarioRojo {
+  color: rgb(229, 41, 39);
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+}
+body .menu .card div .superMarioVerde {
+  color: rgb(70, 175, 74);
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+}
+body .menu .card div .luigi {
+  color: rgb(1, 182, 69);
+  text-shadow: -1px -2px 0 black, 1px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+}
 body .menu .card div .atari {
   font-weight: bold;
   color: red;
@@ -230,22 +264,6 @@ body .menu .card div .pacMan {
 body .menu .card div .sunSet {
   color: red;
   text-shadow: -0.2px -0.2px 0 yellow, 0.2px -0.2px 0 yellow, -0.2px 0.2px 0 yellow, 0.2px 0.2px 0 yellow;
-}
-body .menu .card div .superMarioAzul {
-  color: rgb(12, 154, 216);
-  text-shadow: -0.2px -0.2px 0 black, 0.2px -0.2px 0 black, -0.2px 0.2px 0 black, 0.2px 0.2px 0 black;
-}
-body .menu .card div .superMarioAmarillo {
-  color: rgb(253, 207, 8);
-  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
-}
-body .menu .card div .superMarioRojo {
-  color: rgb(229, 41, 39);
-  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
-}
-body .menu .card div .superMarioVerde {
-  color: rgb(70, 175, 74);
-  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
 }
 body .menu .card div h5 {
   font-size: 35px;
